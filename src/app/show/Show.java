@@ -52,7 +52,7 @@ public class Show {
     //Распечатать список всех актёров, участвующих в спектакле. Для каждого актёра при этом должны выводиться имя и фамилия, а также в скобках его рост.
     public void printListOfActors() {
         for (Actor actor : this.listOfActors) {
-            System.out.println(actor + " (" + actor.getHeight() + " см)");
+            System.out.println(actor);
         }
     }
 
@@ -98,7 +98,12 @@ public class Show {
     }
 
     public Director getDirector() {
-        return director;
+        return this.director;
+    }
+
+    //БТ: Распечатать информацию о режиссёре спектакля — должны выводиться его имя и фамилия.
+    public void printDirectorInfo() {
+        System.out.println(this.director + ", постановок: " + this.director.getNumberOfShows());
     }
 
     public int getDuration() {

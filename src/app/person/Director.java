@@ -12,10 +12,6 @@ public class Director extends Person {
         return numberOfShows;
     }
 
-    //БТ: Распечатать информацию о режиссёре спектакля — должны выводиться его имя и фамилия.
-    public void printDirectorInfo() {
-        System.out.println(this + ", постановок: " + this.numberOfShows);
-    }
 
     @Override
     public String toString() {

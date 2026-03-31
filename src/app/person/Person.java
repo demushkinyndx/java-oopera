@@ -13,6 +13,18 @@ public class Person {
         this.gender = gender;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(getName(), person.getName()) && Objects.equals(getSurname(), person.getSurname());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getSurname());
+    }
+
     public String getName() {
         return name;
     }
@@ -25,4 +37,8 @@ public class Person {
         return gender;
     }
 
+    @Override
+    public String toString() {
+        return getName() + " " + getSurname();
+    }
 }

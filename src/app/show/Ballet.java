@@ -4,7 +4,7 @@ import app.person.Choreographer;
 import app.person.MusicAuthor;
 
 public class Ballet extends MusicalShow {
-    Choreographer choreographer;
+    private final Choreographer choreographer;
 
     public Ballet(Show show, MusicAuthor musicAuthor, String librettoText, Choreographer choreographer) {
         super(show, musicAuthor, librettoText);

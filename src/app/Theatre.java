@@ -97,7 +97,7 @@ public class Theatre {
         System.out.println(show);
         //БТ: Распечатать информацию о режиссёре спектакля — должны выводиться его имя и фамилия.
         System.out.print("Режиссер: ");
-        show.getDirector().printDirectorInfo();
+        show.printDirectorInfo();
 
         //Распечатать список всех актёров, участвующих в спектакле. Для каждого актёра при этом должны выводиться имя и фамилия, а также в скобках его рост.
         System.out.println("Актеры:");

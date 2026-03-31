@@ -12,7 +12,7 @@ public class Actor extends Person {
 
     @Override
     public String toString() {
-        return getName() + " " + getSurname();
+        return getName() + " " + getSurname() + " (" + this.getHeight() + " см)";
     }
 
     public int getHeight() {
