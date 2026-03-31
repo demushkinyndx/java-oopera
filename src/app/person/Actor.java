@@ -25,13 +25,12 @@ public class Actor extends Person {
         Actor actor = (Actor) o;
         //бт: Актёры считаются одинаковыми, если у них совпадают имя, фамилия и рост.
         return getHeight() == actor.getHeight() &&
-                Objects.equals(getName(), actor.getName()) &&
-                Objects.equals(getSurname(), actor.getSurname());
+                super.equals(o);
     }
 
     @Override
     public int hashCode() {
         //бт: Актёры считаются одинаковыми, если у них совпадают имя, фамилия и рост.
-        return Objects.hash(getName(), getSurname(), getHeight());
+        return Objects.hash(super.hashCode(), getHeight());
     }
 }
